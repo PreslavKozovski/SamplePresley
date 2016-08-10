@@ -442,21 +442,21 @@
 .km-nova .k-toolbar,
 .km-nova .km-tabstrip,
 .km-nova .km-drawer .km-content {
-  background-image: linear-gradient(to bottom, #2e3246 0%, #242736 100%);
+  background-image: linear-gradient(to bottom, #0093f5 0%, #0084db 100%);
 }
 .km-nova .km-drawer .km-navbar {
-  background: #14151e;
+  background: #006bb3;
 }
 .km-nova .km-tabstrip .km-button.km-state-active {
-  background-image: linear-gradient(to bottom, #1e202d 0%, #14151e 100%);
+  background-image: linear-gradient(to bottom, #007acc 0%, #006bb3 100%);
 }
 .km-nova #navigation-container .active,
 .km-nova .km-drawer .km-listview li.km-state-active {
-  background: #1e202d;
+  background: #007acc;
 }
 .km-nova .km-touch-scrollbar,
 .km-nova .km-loading-left:before {
-  background: #32364c;
+  background: #0099ff;
 }
 .km-nova .km-navbar *,
 .km-nova .k-toolbar *,
@@ -532,4 +532,10 @@
   font-style: italic;
   color: #f44336;
   text-align: center;
+}
+/* Presley CSS*/
+#login a{
+    display: block;
+    text-align: center;
+    margin: 10px 90px;
 }

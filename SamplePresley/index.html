@@ -6,52 +6,52 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width">
     <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet">
-
     <link href="styles/overrides.css" rel="stylesheet">
     <link href="styles/main.css" rel="stylesheet">
-
     <script src="cordova.js"></script>
     <script src="kendo/js/jquery.min.js"></script>
     <script src="kendo/js/kendo.mobile.min.js"></script>
+    <script src="everlive.all.min.js"></script>
+    
     <script src="app.js"></script>
+    <script src="components/LogIn/LogIn.js"></script>
+    <script src="components/Register/Register.js"></script>
+    <script src="components/ForgotPassword/ForgotPassword.js"></script>
+    <script src="components/MyWall/MyWall.js"></script>
+    <script src="components/Share/Share.js"></script>
+    <script src="components/Settings/Settings.js"></script>
 </head>
 
-<body id="kendoUiMobileApp">
-    <script src="components/home/index.js"></script>
+<body>
     <div data-role="layout" data-id="main">
         <header data-role="header">
             <div data-role="navbar">
                 <span data-role="view-title"></span>
+                <a data-role="button" href="components/Settings/Settings.html" data-icon="settings" data-align="right"></a>
             </div>
         </header>
         <footer data-role="footer">
-            <div data-role="tabstrip" id="navigation-container">
-                <a href="components/home/view.html" data-icon="home">Home View</a>
-            </div>
-            <div id="navigation-container-more" style="display: none">
+            <div data-role="tabstrip">      
+                <a href="components/MyWall/MyWall.html" data-icon="home">Home View</a>
+                <a href="components/Share/Share.html" data-icon="share">Share</a>
             </div>
         </footer>
     </div>
-
-
-    <div id="navigation-show-more-view" data-role="view" data-title="Show More" data-layout="main">
-        <ul data-role="listview" data-style="inset" data-click="app.listViewClick">
-        </ul>
+    <div data-role="layout" data-id="Reg&Forgot">
+        <header data-role="header">
+            <div data-role="navbar">
+                <span data-role="view-title"></span>
+                <a data-role="backbutton" data-align="left"></a>
+            </div>
+        </header>
     </div>
-
-    <div data-role="layout" data-id="main-nonav">
+    <div data-role="layout" data-id="LogIn">
         <header data-role="header">
             <div data-role="navbar">
                 <span data-role="view-title"></span>
             </div>
         </header>
-        <footer data-role="footer">
-        </footer>
     </div>
-    <!-- START_CUSTOM_CODE_kendoUiMobileApp -->
-    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
-
-    <!-- END_CUSTOM_CODE_kendoUiMobileApp -->
 </body>
 
 </html>
