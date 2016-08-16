@@ -1,6 +1,6 @@
 'use strict';
 
-app.MyWall = kendo.observable({
+app.Home = kendo.observable({
     onShow: function () {},
     afterShow: function () {},
     load: function () {

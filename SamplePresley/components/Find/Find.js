@@ -1,6 +1,6 @@
 'use strict';
 
-app.Share = kendo.observable({
+app.Find = kendo.observable({
     onShow: function () {},
     afterShow: function () {},
     takePic: function () {

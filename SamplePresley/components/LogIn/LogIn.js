@@ -21,7 +21,7 @@ app.LogIn = kendo.observable({
         }
         el.Users.login(this.username, this.password,
             function (data) {
-            	app.mobileApp.navigate("components/MyWall/MyWall.html");
+                app.mobileApp.navigate("components/Home/Home.html");
             },
             function () {
                 navigator.notification.alert("Unfortunately we could not find your account.");
