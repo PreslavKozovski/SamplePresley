@@ -19,7 +19,7 @@ app.LogIn = kendo.observable({
             navigator.notification.alert("Password is required.");
             return;
         }
-        el.Users.login(this.username, this.password,
+        everlive.Users.login(this.username, this.password,
             function (data) {
                 app.mobileApp.navigate("components/Home/Home.html");
             },

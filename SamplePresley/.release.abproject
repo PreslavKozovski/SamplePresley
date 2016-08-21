@@ -1,7 +1,9 @@
 {
   "CorePlugins": [
+    "com.phonegap.plugins.barcodescanner@5.0.1",
     "cordova-plugin-battery-status",
     "cordova-plugin-camera",
+    "cordova-plugin-console",
     "cordova-plugin-contacts",
     "cordova-plugin-device",
     "cordova-plugin-device-motion",
@@ -11,6 +13,7 @@
     "cordova-plugin-file-transfer",
     "cordova-plugin-geolocation",
     "cordova-plugin-globalization",
+    "cordova-plugin-inappbrowser",
     "cordova-plugin-media",
     "cordova-plugin-media-capture",
     "cordova-plugin-network-information",

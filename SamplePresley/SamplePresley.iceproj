@@ -38,6 +38,8 @@
     <Content Include="components\LogIn\LogIn.js" />
     <Content Include="components\Home\Home.html" />
     <Content Include="components\Home\Home.js" />
+    <Content Include="components\productDetails\productDetails.html" />
+    <Content Include="components\productDetails\productDetails.js" />
     <Content Include="components\Register\Register.html" />
     <Content Include="components\Register\Register.js" />
     <Content Include="components\Settings\Settings.html" />
@@ -47,12 +49,11 @@
     <Content Include="cordova.android.js" />
     <Content Include="cordova.ios.js" />
     <Content Include="cordova.wp8.js" />
+    <Content Include="data\data.js" />
+    <Content Include="data\img\CocaCola.jpg" />
     <Content Include="everlive.all.min.js" />
-    <Content Include="images\1.jpg" />
-    <Content Include="images\2.jpg" />
-    <Content Include="images\3.jpg" />
-    <Content Include="images\4.jpg" />
-    <Content Include="images\5.jpg" />
+    <Content Include="data\img\MarlboroDark.jpg" />
+    <Content Include="data\img\MarlboroLight.jpg" />
     <Content Include="index.html" />
     <Content Include="kendo\js\jquery.min.js" />
     <Content Include="kendo\js\kendo.mobile.min.js" />
@@ -165,15 +166,17 @@
     <Folder Include="components\ForgotPassword\" />
     <Folder Include="components\LogIn\" />
     <Folder Include="components\Home\" />
+    <Folder Include="components\productDetails\" />
     <Folder Include="components\Register\" />
     <Folder Include="components\Settings\" />
     <Folder Include="components\Find\" />
-    <Folder Include="images\" />
+    <Folder Include="data\img\" />
     <Folder Include="kendo\" />
     <Folder Include="kendo\js\" />
     <Folder Include="kendo\styles\" />
     <Folder Include="kendo\styles\images\" />
     <Folder Include="kendo\typescript\" />
+    <Folder Include="data\" />
     <Folder Include="Plugins\" />
     <Folder Include="styles\" />
   </ItemGroup>

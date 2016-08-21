@@ -4,7 +4,7 @@ var apiKey = "j07342f56sk0kpr8",
     app = {
         data: {}
     };
-var el = new Everlive({
+var everlive = new Everlive({
     apiKey: apiKey,
     scheme: scheme
 });
@@ -14,7 +14,7 @@ var el = new Everlive({
         app.mobileApp = new kendo.mobile.Application(document.body, {
             skin: "nova",
             transition: "slide",
-            initial: "components/LogIn/LogIn.html"
+            initial: "components/Home/Home.html"
         });
         navigator.splashscreen.hide();
     }

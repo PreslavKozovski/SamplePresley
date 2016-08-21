@@ -12,7 +12,7 @@ app.Register = kendo.observable({
             navigator.notification.alert("Password is required.");
             return;
         }
-        el.Users.register(this.username, this.password, {
+        everlive.Users.register(this.username, this.password, {
                 Email: this.email
             },
             function () {

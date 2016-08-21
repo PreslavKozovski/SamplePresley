@@ -613,3 +613,33 @@
 .km-nova .km-button:hover {
     background: #0099ff;
 }
+.productImage {
+  float: left;
+}
+.productImage img {
+  width: 12em;
+  height: 18em;
+}
+.productTitle {
+  padding-left: 13em;
+  padding-right: 1em;
+  color: black;
+}
+#pdetails {
+  text-align: center;
+}
+#pdetails .title {
+  font-size: 2em;
+  margin-top: 1em;
+}
+#pdetails .pdImage img{
+  width: 18em;
+  height: 27em;
+}
+#pdetails div {
+  margin-bottom: 1em;
+}
+#pdetails label {
+  font-size: 2em;
+  padding-right: 1em;
+}

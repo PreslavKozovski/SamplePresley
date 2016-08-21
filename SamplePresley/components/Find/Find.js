@@ -4,23 +4,22 @@ app.Find = kendo.observable({
     onShow: function () {},
     afterShow: function () {},
     takePic: function () {
-        var success = function (data) {
-            var d = new Date();
-            var n = d.getTime();
-            el.Files.create({
-                Filename: n + ".jpg",
-                ContentType: "image/jpeg",
-                base64: data,
-            });
-        };
-        var error = function () {
-            navigator.notification.alert("Unfortunately we could not add the image");
-        };
-        var config = {
-            destinationType: Camera.DestinationType.DATA_URL,
-            targetHeight: 640,
-            targetWidth: 480
-        };
-        navigator.camera.getPicture(success, error, config);
+        var that = this;
+        if (window.navigator.simulator === true) {
+            alert("Not Supported in Simulator.");
+        }
+        else {
+            cordova.plugins.barcodeScanner.scan(
+                function (result) {
+                    if (!result.cancelled) {
+                        alert(reslt.text);
+                        app.mobileApp.navigate("components/Home/Home.html");
+                    }
+                },
+                function (error) {
+                    alert("Error: " + error);
+                    app.mobileApp.navigate("components/Home/Home.html");
+                });
+        }
     }
 });

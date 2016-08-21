@@ -1,4 +1,17 @@
 <div id="home" data-role="view" data-title="Home" data-layout="main" data-reload="true" data-model="app.Home" data-show="app.Home.load">
-    <a data-role="button" data-bind="click: load" class="LSButtons">load</a>
-    <ul id="images"></ul>
+    <ul data-role="listview" data-source="Data.data" data-template="products-template"></ul>
 </div>
+<script type="text/x-kendo-template" id="products-template">
+    <a href="components/productDetails/productDetails.html?##id=#: barcode #">
+        <div class="productImage"><img src="#: image_url #" /></div>
+        <div class="productTitle">#: name #</div>
+    </a>
+</script>
+<!--
+<ul id="div-list-deliveries" class="list-deliveries hidden" data-role="listview" 
+    data-template="dataListViewListTemplate" data-auto-bind="false" 
+    data-bind="{ source: deliveriesViewList.viewModel.dataSource, events: {click: deliveriesViewList.viewModel.itemClick} }" 
+    data-pull-to-refresh="true" data-endless-scroll="false">
+</ul>
+
+    -->

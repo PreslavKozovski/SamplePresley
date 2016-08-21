@@ -18,6 +18,8 @@
     <script src="components/Register/Register.js"></script>
     <script src="components/ForgotPassword/ForgotPassword.js"></script>
     <script src="components/Home/Home.js"></script>
+    <script src="components/productDetails/productDetails.js"></script>
+    <script src="components/Favorites/Favorites.js"></script>
     <script src="components/Find/Find.js"></script>
     <script src="components/Settings/Settings.js"></script>
 </head>
@@ -33,6 +35,7 @@
         <footer data-role="footer">
             <div data-role="tabstrip">      
                 <a href="components/Home/Home.html" data-icon="home">Home View</a>
+                <a href="components/Favorites/Favorites.html" data-icon="favorites">Favorites</a>
                 <a href="components/Find/Find.html" data-icon="search">Find</a>
             </div>
         </footer>
@@ -51,6 +54,20 @@
                 <span data-role="view-title"></span>
             </div>
         </header>
+    </div>
+    <div data-role="layout" data-id="details">
+        <header data-role="header">
+            <div data-role="navbar">
+                <a data-click="app.Settings.back" data-role="button" data-align="left" data-icon="rewind"></a>
+                <span data-role="view-title"></span>
+            </div>
+        </header>
+        <footer data-role="footer">
+            <div data-role="tabstrip">      
+                <a href="components/productDetails/productDetails.html" data-icon="about">About</a>
+                <a href="components/shopMap/shopMap.html" data-icon="globe">Shops</a>
+            </div>
+        </footer>
     </div>
 </body>
 
