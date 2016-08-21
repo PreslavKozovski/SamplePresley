@@ -1,0 +1,16 @@
+<div id="productdetails" data-role="view" data-title="Product Details" data-layout="Reg&Forgot" data-reload="true" data-model="app.productDetails" data-show="app.productDetails.onShow" data-hide="app.productDetails.onHide">
+   <div id="pdetails">
+        <div class="title" data-bind="text: title"></div>
+        <div class="pdImage">
+            dsa
+            <img data-bind="attr: { src: image_url }" />
+        </div>
+        <div>
+            <label for="favorite">Favorite</label>
+            <input id="favorite" type="checkbox" data-role="switch" data-checked=false data-change="app.productDetails.setIsFavorite" />
+        </div>
+        <div>
+            <p><a data-role="button" id="openLink" data-click="app.productDetails.openLink">Maker's site</a></p>
+        </div>
+    </div>
+</div>
