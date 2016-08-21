@@ -4,7 +4,6 @@ app.Find = kendo.observable({
     onShow: function () {},
     afterShow: function () {},
     takePic: function () {
-        var that = this;
         if (window.navigator.simulator === true) {
             alert("Not Supported in Simulator.");
         }
@@ -12,8 +11,20 @@ app.Find = kendo.observable({
             cordova.plugins.barcodeScanner.scan(
                 function (result) {
                     if (!result.cancelled) {
-                        alert(reslt.text);
-                        app.mobileApp.navigate("components/Home/Home.html");
+                        alert(result.text);
+                        window.Data.data.filter({
+                            field: "barcode",
+                            operator: "eq",
+                            value: result.text
+                        });
+                        if (window.Data.data.view()[0]) {
+                            var GoTo = "components/productDetails/productDetails.html?id=" + result.text;
+                            app.mobileApp.navigate(GoTo);
+                        }
+                        else {
+                            alert("dsa");
+                            app.mobileApp.navigate("components/addProduct/addProduct.html");
+                        }
                     }
                 },
                 function (error) {
@@ -21,5 +32,9 @@ app.Find = kendo.observable({
                     app.mobileApp.navigate("components/Home/Home.html");
                 });
         }
+    },
+    dsa: function () {
+        var dsa = "components/Home/Home.html?id=123";
+        app.mobileApp.navigate(dsa);
     }
 });

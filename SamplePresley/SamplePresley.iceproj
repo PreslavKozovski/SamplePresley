@@ -32,6 +32,8 @@
     <Content Include=".release.abproject" />
     <Content Include=".yo-rc.json" />
     <Content Include="app.js" />
+    <Content Include="components\addProduct\addProduct.html" />
+    <Content Include="components\addProduct\addProduct.js" />
     <Content Include="components\ForgotPassword\ForgotPassword.html" />
     <Content Include="components\ForgotPassword\ForgotPassword.js" />
     <Content Include="components\LogIn\LogIn.html" />
@@ -40,6 +42,8 @@
     <Content Include="components\Home\Home.js" />
     <Content Include="components\productDetails\productDetails.html" />
     <Content Include="components\productDetails\productDetails.js" />
+    <Content Include="components\productMap\productMap.html" />
+    <Content Include="components\productMap\productMap.js" />
     <Content Include="components\Register\Register.html" />
     <Content Include="components\Register\Register.js" />
     <Content Include="components\Settings\Settings.html" />
@@ -64,6 +68,15 @@
     <Content Include="kendo\styles\images\wp8_icons.png" />
     <Content Include="kendo\styles\images\wp8_inverseicons.png" />
     <Content Include="kendo\styles\kendo.mobile.all.min.css" />
+    <Content Include="Plugins\Canvas2ImagePlugin-master\.gitignore" />
+    <Content Include="Plugins\Canvas2ImagePlugin-master\package.json" />
+    <Content Include="Plugins\Canvas2ImagePlugin-master\plugin.xml" />
+    <Content Include="Plugins\Canvas2ImagePlugin-master\README.md" />
+    <Content Include="Plugins\Canvas2ImagePlugin-master\src\android\Canvas2ImagePlugin.java" />
+    <Content Include="Plugins\Canvas2ImagePlugin-master\src\ios\Canvas2ImagePlugin.h" />
+    <Content Include="Plugins\Canvas2ImagePlugin-master\src\ios\Canvas2ImagePlugin.m" />
+    <Content Include="Plugins\Canvas2ImagePlugin-master\src\wp8\Canvas2ImagePlugin.cs" />
+    <Content Include="Plugins\Canvas2ImagePlugin-master\www\Canvas2ImagePlugin.js" />
     <Content Include="styles\main.css" />
     <Content Include="styles\overrides.css" />
   </ItemGroup>
@@ -166,6 +179,8 @@
     <Folder Include="components\ForgotPassword\" />
     <Folder Include="components\LogIn\" />
     <Folder Include="components\Home\" />
+    <Folder Include="components\addProduct\" />
+    <Folder Include="components\productMap\" />
     <Folder Include="components\productDetails\" />
     <Folder Include="components\Register\" />
     <Folder Include="components\Settings\" />
@@ -178,6 +193,12 @@
     <Folder Include="kendo\typescript\" />
     <Folder Include="data\" />
     <Folder Include="Plugins\" />
+    <Folder Include="Plugins\Canvas2ImagePlugin-master\" />
+    <Folder Include="Plugins\Canvas2ImagePlugin-master\src\" />
+    <Folder Include="Plugins\Canvas2ImagePlugin-master\src\android\" />
+    <Folder Include="Plugins\Canvas2ImagePlugin-master\src\ios\" />
+    <Folder Include="Plugins\Canvas2ImagePlugin-master\src\wp8\" />
+    <Folder Include="Plugins\Canvas2ImagePlugin-master\www\" />
     <Folder Include="styles\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />

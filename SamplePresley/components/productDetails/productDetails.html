@@ -2,8 +2,19 @@
    <div id="pdetails">
         <div class="title" data-bind="text: title"></div>
         <div class="pdImage">
-            dsa
             <img data-bind="attr: { src: image_url }" />
+        </div>
+        <div>
+            <p><a data-role="button" id="dwLibrary" data-click="app.productDetails.dwGallery">Download to Gallery</a></p>
+        </div>
+       <div>
+            <p><a data-role="button" id="dwUrl" data-click="app.productDetails.dwLibrary">Download to Library</a></p>
+        </div>
+       <div>
+            <p><a data-role="button" id="uploadFile" data-click="app.productDetails.uploadFile">Upload it!</a></p>
+        </div>
+       <div>
+            <p><a data-role="button" id="showMap" href="components/productMap/productMap.html">Product Map</a></p>
         </div>
         <div>
             <label for="favorite">Favorite</label>
