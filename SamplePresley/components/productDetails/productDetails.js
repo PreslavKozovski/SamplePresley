@@ -72,12 +72,13 @@ app.productDetails = kendo.observable({
     },
     uploadFile: function () {
         var fileURL = product.image_url;
+        console.log(product.image_url);
         var uri = encodeURI("http://posttestserver.com/post.php");
         var options = new FileUploadOptions();
 
         options.fileKey = "file";
         options.fileName = fileURL.substr(fileURL.lastIndexOf('/') + 1);
-        options.mimeType = "text/plain";
+        options.mimeType = "image/jpeg";
         options.headers = {
             Connection: "Close"
         };
@@ -101,12 +102,13 @@ app.productDetails = kendo.observable({
         }
     },
     dwLibrary: function () {
+        alert("dsa");
         var that = this,
 			filePath = "";
 
         that.getFilesystem(
 				function (fileSystem) {
-				    console.log("gotFS");
+				    alert("gotFS");
 
 				    if (device.platform === "Android") {
 				        that.getFolder(fileSystem, folderName, function (folder) {
@@ -135,6 +137,7 @@ app.productDetails = kendo.observable({
 		);
     },
     getFilesystem: function (success, fail) {
+        alert("file");
         window.requestFileSystem = window.requestFileSystem || window.webkitRequestFileSystem;
         window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, success, fail);
     },
@@ -164,5 +167,9 @@ app.productDetails = kendo.observable({
 			    console.log("upload error code" + error.code);
 			}
 			);
+    },
+    toMap: function () {
+        var GoTo = "components/productMap/productMap.html?id=" + product.barcode;
+        app.mobileApp.navigate(GoTo);
     },
 });

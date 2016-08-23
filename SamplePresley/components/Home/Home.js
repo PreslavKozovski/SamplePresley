@@ -4,10 +4,6 @@ app.Home = kendo.observable({
     onShow: function () {},
     afterShow: function () {},
     load: function () {
-        var location = window.location.toString();
-        var barcode = location.substring(location.lastIndexOf('?') + 4);
-        console.log(location);
-        console.log(barcode);
     },
     
 });

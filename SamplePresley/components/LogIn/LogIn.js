@@ -28,19 +28,19 @@ app.LogIn = kendo.observable({
             });
     },
     logFB: function () {
-        if (!this.checkSimulator()) {
+        if (!checkSimulator()) {
             facebookConnectPlugin.login(["email"], function (response) {
                 if (response.status === "connected") {
-                    alert("You are: " + response.status + ", details:\n\n" + JSON.stringify(response));
                     app.mobileApp.navigate("components/Home/Home.html");
                 } else {
                     alert("You are not logged in");
                 }
             });
         }
-    },
-    checkSimulator: function () {
-        if (window.navigator.simulator === true) {
+    }
+});
+function checkSimulator(){
+    if (window.navigator.simulator === true) {
             alert('This plugin is not available in the simulator.');
             return true;
         } else if (window.facebookConnectPlugin === undefined) {
@@ -49,5 +49,4 @@ app.LogIn = kendo.observable({
         } else {
             return false;
         }
-    }
-});
+}

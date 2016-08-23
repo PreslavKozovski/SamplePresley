@@ -34,6 +34,12 @@
     <Content Include="app.js" />
     <Content Include="components\addProduct\addProduct.html" />
     <Content Include="components\addProduct\addProduct.js" />
+    <Content Include="components\Favorites\Favorites.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="components\Favorites\Favorites.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="components\ForgotPassword\ForgotPassword.html" />
     <Content Include="components\ForgotPassword\ForgotPassword.js" />
     <Content Include="components\LogIn\LogIn.html" />
@@ -68,7 +74,6 @@
     <Content Include="kendo\styles\images\wp8_icons.png" />
     <Content Include="kendo\styles\images\wp8_inverseicons.png" />
     <Content Include="kendo\styles\kendo.mobile.all.min.css" />
-    <Content Include="Plugins\Canvas2ImagePlugin-master\.gitignore" />
     <Content Include="Plugins\Canvas2ImagePlugin-master\package.json" />
     <Content Include="Plugins\Canvas2ImagePlugin-master\plugin.xml" />
     <Content Include="Plugins\Canvas2ImagePlugin-master\README.md" />
@@ -176,6 +181,7 @@
     <Folder Include="App_Resources\WP8\Tiles\" />
     <Folder Include="App_Resources\WP8\Tiles\Iconic\" />
     <Folder Include="components\" />
+    <Folder Include="components\Favorites\" />
     <Folder Include="components\ForgotPassword\" />
     <Folder Include="components\LogIn\" />
     <Folder Include="components\Home\" />

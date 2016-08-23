@@ -58,6 +58,7 @@
     "cordova-plugin-geolocation",
     "cordova-plugin-globalization",
     "cordova-plugin-inappbrowser",
+    "cordova-plugin-mapbox@1.2.0",
     "cordova-plugin-media",
     "cordova-plugin-media-capture",
     "cordova-plugin-network-information",
@@ -68,8 +69,11 @@
   ],
   "CordovaPluginVariables": {
     "com.phonegap.plugins.facebookconnect": {
-      "APP_ID": "282928678747344",
-      "APP_NAME": "Sample Progress App"
+      "APP_ID": "1473017562978045",
+      "APP_NAME": "Telerik Plugin Demo"
+    },
+    "cordova-plugin-mapbox": {
+      "ACCESS_TOKEN": "pk.eyJ1IjoicHJlc2xhdmtvem92c2tpIiwiYSI6ImNpczY2Mm0waDAwMmgyenNka2FqZDJoeGcifQ._Cb0Gc-tPvyZhbWpZnfhaA"
     }
   }
 }

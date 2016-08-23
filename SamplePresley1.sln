@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}") = "SamplePresley", "SamplePresley\SamplePresley.iceproj", "{0C7D2430-2823-4E53-B4C9-7E53FF0568A9}"
 EndProject
