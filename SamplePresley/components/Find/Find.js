@@ -22,8 +22,9 @@ app.Find = kendo.observable({
                             app.mobileApp.navigate(GoTo);
                         }
                         else {
-                            alert("dsa");
-                            app.mobileApp.navigate("components/addProduct/addProduct.html");
+                            window.Data.data.filter([]);
+                            var GoTo = "components/addProduct/addProduct.html?id=" + result.text;
+                            app.mobileApp.navigate(GoTo);
                         }
                     }
                 },
@@ -33,8 +34,17 @@ app.Find = kendo.observable({
                 });
         }
     },
-    dsa: function () {
-        var dsa = "components/Home/Home.html?id=123";
-        app.mobileApp.navigate(dsa);
+    showEl: function () {
+        window.Data.data.add({
+            ID: 4,
+            name: "Pen",
+            barcode: "123456",
+            site_url: "http://www.gbg.bg",
+            image_url: "data/img/pen.jpg",
+            is_favorite: true,
+            Latitudes: [52.3602160, 52.3702160, 52.3732160],
+            Longitudes: [4.8891680, 4.8911680, 4.8941680]
+        });
+        console.log(window.Data.data.view())
     }
 });

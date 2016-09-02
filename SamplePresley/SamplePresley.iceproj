@@ -61,6 +61,7 @@
     <Content Include="cordova.wp8.js" />
     <Content Include="data\data.js" />
     <Content Include="data\img\CocaCola.jpg" />
+    <Content Include="data\img\pen.jpg" />
     <Content Include="everlive.all.min.js" />
     <Content Include="data\img\MarlboroDark.jpg" />
     <Content Include="data\img\MarlboroLight.jpg" />

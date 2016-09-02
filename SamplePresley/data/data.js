@@ -26,14 +26,14 @@
       "image_url": "data/img/MarlboroDark.jpg",
       "is_favorite": true,
       "Latitudes": [
-          30,
-          31,
-          32
+          52.3602160,
+          52.3702160,
+          52.3732160
       ],
       "Longitudes": [
-          33,
-          34,
-          35
+          4.8891680,
+          4.8911680,
+          4.8941680
       ]
     },
     {
@@ -44,14 +44,14 @@
       "image_url": "data/img/CocaCola.jpg",
       "is_favorite": false,
       "Latitudes": [
-          40,
-          41,
-          42
+          52.3602160,
+          52.3702160,
+          52.3732160
       ],
       "Longitudes": [
-          43,
-          44,
-          45
+          4.8891680,
+          4.8911680,
+          4.8941680
       ]
     }
   ]

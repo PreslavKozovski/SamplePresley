@@ -1,3 +1,37 @@
-<div id="addproduct" data-role="view" data-title="Add Product" data-layout="Reg&Forgot" data-reload="true" data-model="app.addProduct" data-show="app.addProduct.onShow">
-    Add Product
+<div id="addproduct" data-role="view" data-title="Add Product" data-layout="Reg&Forgot" data-reload="true" data-model="app.addProduct" data-show="app.addProduct.onShow" data-after-show="app.addProduct.afterShow">
+    <div id:"addForm">
+        <form>
+            <ul class="form-content" data-role="listview" data-style="inset">
+                <li class="form-content-item">
+                    <label>
+                        <span>Name:</span>
+                        <input data-bind="value: fields.name" placeholder="Type name ..." type="text"/>
+                    </label>
+                </li>
+                <li class="form-content-item">
+                    <label>
+                        <span>Site:</span>
+                        <input data-bind="value: fields.site" placeholder="Type site ..." type="url"/>
+                    </label>
+                </li>
+                <li class="form-content-item">
+                    <label>
+                        <span>Favorite?</span>
+                        <input data-bind="click: checkboxClick" type="checkbox"/>
+                    </label>
+                </li>
+                <li class="form-content-item">
+                    <label>
+                        <span>Take pic</span>
+                        <a data-role="button" data-bind="click: takePic">Take</a>
+                    </label>
+                </li>
+            </ul>
+
+            <div class="button-group">
+                <a class="LSButtons" data-role="button" data-bind="click: CancelForm">Cancel</a>
+                <a class="LSButtons" data-role="button" data-bind="click: SubmitForm">Submit</a>
+            </div>
+        </form>
+    </div>
 </div>
